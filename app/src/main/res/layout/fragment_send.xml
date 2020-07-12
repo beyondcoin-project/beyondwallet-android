@@ -401,7 +401,7 @@
             android:textSize="20sp"
             app:buttonType="1"
             app:isBreadButton="true"
-            tools:background="@color/litecoin_litewallet_blue" />
+            tools:background="@color/beyondcoin_beyondwallet_blue" />
 
     </LinearLayout>
 

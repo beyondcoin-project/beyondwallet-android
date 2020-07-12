@@ -6,7 +6,7 @@
     android:id="@+id/activity_pit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/litecoin_litewallet_blue"
+    android:background="@color/beyondcoin_beyondwallet_blue"
     tools:context="com.breadwallet.presenter.activities.LoginActivity">
 
     <ImageView
@@ -18,7 +18,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
-        android:src="@drawable/ltc_logo"
+        android:src="@drawable/bynd_logo"
         android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/brkeyboard"
