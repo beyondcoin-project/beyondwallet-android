@@ -141,7 +141,7 @@ public class FragmentTransactionItem extends Fragment {
 
     private void fillTexts() {
         //get the current iso
-        String iso = BRSharedPrefs.getPreferredLTC(getActivity()) ? "LTC" : BRSharedPrefs.getIso(getContext());
+        String iso = BRSharedPrefs.getPreferredBYND(getActivity()) ? "BYND" : BRSharedPrefs.getIso(getContext());
 
         //get the tx amount
         BigDecimal txAmount = new BigDecimal(item.getReceived() - item.getSent()).abs();

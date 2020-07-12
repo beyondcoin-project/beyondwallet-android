@@ -40,7 +40,7 @@ static uint64_t _privKeyBalance;
 static size_t _transactionsCounter = 0;
 jclass _walletManagerClass;
 
-//#if LITECOIN_TESTNET
+//#if BEYONDCOIN_TESTNET
 //#error don't know bcash testnet fork height
 //#else // mainnet
 #define BCASH_FORKHEIGHT 478559
@@ -967,7 +967,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_breadwallet_wallet_BRWalletManager_getSeed
 
 JNIEXPORT jboolean JNICALL Java_com_breadwallet_wallet_BRWalletManager_isTestNet(JNIEnv *env,
                                                                                  jobject thiz) {
-    return LITECOIN_TESTNET ? JNI_TRUE : JNI_FALSE;
+    return BEYONDCOIN_TESTNET ? JNI_TRUE : JNI_FALSE;
 }
 
 // returns an unsigned transaction that sweeps all wallet UTXOs as of block height 478559 to addr

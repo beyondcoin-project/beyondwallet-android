@@ -26,7 +26,7 @@ android {
     compileSdkVersion = 29
     defaultConfig {
         testInstrumentationRunner = 'androidx.test.runner.AndroidJUnitRunner'
-        applicationId = 'com.loafwallet'
+        applicationId = 'com.beyondwallet'
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 613
@@ -66,35 +66,35 @@ android {
     // Specifies two flavor dimensions.
     flavorDimensions "mode"
     productFlavors {
-        loaf {
-            applicationId "com.loafwallet"
+        beyond {
+            applicationId "com.beyondwallet"
             dimension "mode"
-            resValue "string", "app_name", "Litewallet"
-            buildConfigField "boolean", "LITECOIN_TESTNET", "false"
+            resValue "string", "app_name", "Beyondwallet"
+            buildConfigField "boolean", "BEYONDCOIN_TESTNET", "false"
 
             externalNativeBuild {
                 cmake {
                     // When you specify a version of CMake, as shown below,
                     // the Android plugin searches for its binary within your
                     // PATH environmental variable.
-                    cFlags "-DLITECOIN_TESTNET=0"
+                    cFlags "-DBEYONDCOIN_TESTNET=0"
                     targets "core-lib"
                 }
             }
         }
 
-        loafTestnet {
-            applicationId "com.loafwallet.testnet"
+        beyondTestnet {
+            applicationId "com.beyondwallet.testnet"
             dimension "mode"
-            resValue "string", "app_name", "Litewallet-testnet"
-            buildConfigField "boolean", "LITECOIN_TESTNET", "true"
+            resValue "string", "app_name", "Beyondwallet-testnet"
+            buildConfigField "boolean", "BEYONDCOIN_TESTNET", "true"
 
             externalNativeBuild {
                 cmake {
                     // When you specify a version of CMake, as shown below,
                     // the Android plugin searches for its binary within your
                     // PATH environmental variable.
-                    cFlags "-DLITECOIN_TESTNET=1"
+                    cFlags "-DBEYONDCOIN_TESTNET=1"
                     targets "core-lib"
                 }
             }

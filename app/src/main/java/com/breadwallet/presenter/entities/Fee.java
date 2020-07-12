@@ -1,10 +1,10 @@
 package com.breadwallet.presenter.entities;
 
 /**
- * Litewallet
+ * Beyondwallet
  * Created by Mohamed Barry on 3/10/20
  * email: mosadialiou@gmail.com
- * Copyright © 2020 Litecoin Foundation. All rights reserved.
+ * Copyright © 2020 Beyondcoin Project. All rights reserved.
  */
 public class Fee {
     public final long luxury;

@@ -60,7 +60,7 @@ public class FragmentBuy extends Fragment {
     String baseUrl;
     public static boolean appVisible = false;
     private String onCloseUrl;
-    public static String URL_BUY_LTC = "https://buy.loafwallet.org";
+    public static String URL_BUY_BYND = "https://buy.loafwallet.org";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -110,7 +110,7 @@ public class FragmentBuy extends Fragment {
 
         //"https://buy.loafwallet.org/?address=\(currentWalletAddress)&code=\(currencyCode)&idate=\(timestamp)&uid=\(uuidString)"
         //https://buy.loafwallet.org/?address=LRG6pZZbJAd62Y8fbnBypk6Qd38oiSNCBf&code=USD&idate=1578021500&uid=3955B06D-69BD-4CAD-95D1-B151BD3FA0EA
-        baseUrl = URL_BUY_LTC;
+        baseUrl = URL_BUY_BYND;
         WebSettings webSettings = webView.getSettings();
         if (0 != (getActivity().getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE)) {
             WebView.setWebContentsDebuggingEnabled(true);

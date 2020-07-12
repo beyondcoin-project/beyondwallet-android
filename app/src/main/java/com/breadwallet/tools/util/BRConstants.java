@@ -116,10 +116,10 @@ public class BRConstants {
      */
     public static final int CURRENT_UNIT_PHOTONS = 0; // formerly CURRENT_UNIT_BITS
     public static final int CURRENT_UNIT_LITES = 1; // formerly CURRENT_UNIT_MBITS
-    public static final int CURRENT_UNIT_LITECOINS = 2;
+    public static final int CURRENT_UNIT_BEYONDCOINS = 2;
 
-    public static final String bitcoinLowercase = "\u0142";
-    public static final String bitcoinUppercase = "\u0141";
+    public static final String bitcoinLowercase = "\u0180";
+    public static final String bitcoinUppercase = "\u0243";
 
     public static final long PASS_CODE_TIME_LIMIT = TimeUnit.MILLISECONDS.convert(6, TimeUnit.DAYS);
 
@@ -132,8 +132,8 @@ public class BRConstants {
      */
     public static final Pair[] DONATION_ADDRESSES = new Pair[]
             {
-                    Pair.create("Litewallet Hardware Fundraiser", "MJ4W7NZya4SzE7R6xpEVdamGCimaQYPiWu"),
-                    Pair.create("Litecoin Foundation", "MVZj7gBRwcVpa9AAWdJm8A3HqTst112eJe")
+                    Pair.create("Beyondwallet Hardware Fundraiser", "MJ4W7NZya4SzE7R6xpEVdamGCimaQYPiWu"),
+                    Pair.create("Beyondcoin Foundation", "MVZj7gBRwcVpa9AAWdJm8A3HqTst112eJe")
             };
     public static final long DONATION_AMOUNT = 1_800_000;
 
@@ -149,9 +149,9 @@ public class BRConstants {
     public static final String fingerprintSpendingLimit = "fingerprint-spending-limit";
     public static final String transactionDetails = "transaction-details";
     //    public static final String manageWallet = "manage-wallet";
-    public static final String receive = "receive-litecoin";
+    public static final String receive = "receive-beyondcoin";
     public static final String requestAmount = "request-amount";
-    public static final String send = "send-litecoin";
+    public static final String send = "send-beyondcoin";
     public static final String walletDisabled = "wallet-disabled";
     public static final String resetPinWithPaperKey = "reset-pin-paper-key";
     public static final String setPin = "set-pin";
@@ -162,12 +162,12 @@ public class BRConstants {
     public static final String wipeWallet = "wipe-wallet";
     public static final String loopBug = "android-loop-bug";
 
-    public static final String TWITTER_LINK = "https://twitter.com/loafwallet";
-    public static final String REDDIT_LINK = "https://www.reddit.com/r/litecoin";
-    public static final String WEB_LINK = "https://loafwallet.org";
-    public static final String TOS_LINK = "https://loafwallet.org/tos";
+    public static final String TWITTER_LINK = "https://twitter.com/beyondcoin_bynd";
+    public static final String REDDIT_LINK = "https://www.reddit.com/r/beyondcoin";
+    public static final String WEB_LINK = "https://beyondwallet.io";
+    public static final String TOS_LINK = "https://beyondwallet.io/tos";
 
-    public static final String BLOCK_EXPLORER_BASE_URL = BuildConfig.LITECOIN_TESTNET ? "https://testnet.litecore.io/tx/" : "https://insight.litecore.io/tx/";
+    public static final String BLOCK_EXPLORER_BASE_URL = BuildConfig.BEYONDCOIN_TESTNET ? "https://testnet.beyondcoinexplorer.com/#/transaction/" : "https://beyondcoinexplorer.com/#/transaction/";
 
     private BRConstants() {
     }

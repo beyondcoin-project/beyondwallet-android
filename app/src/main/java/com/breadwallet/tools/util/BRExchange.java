@@ -60,7 +60,7 @@ public class BRExchange {
             case BRConstants.CURRENT_UNIT_LITES:
                 result = new BigDecimal(String.valueOf(amount)).divide(new BigDecimal("100000"), 5, ROUNDING_MODE);
                 break;
-            case BRConstants.CURRENT_UNIT_LITECOINS:
+            case BRConstants.CURRENT_UNIT_BEYONDCOINS:
                 result = new BigDecimal(String.valueOf(amount)).divide(new BigDecimal("100000000"), 8, ROUNDING_MODE);
                 break;
         }
@@ -77,7 +77,7 @@ public class BRExchange {
             case BRConstants.CURRENT_UNIT_LITES:
                 result = new BigDecimal(String.valueOf(amount)).multiply(new BigDecimal("100000"));
                 break;
-            case BRConstants.CURRENT_UNIT_LITECOINS:
+            case BRConstants.CURRENT_UNIT_BEYONDCOINS:
                 result = new BigDecimal(String.valueOf(amount)).multiply(new BigDecimal("100000000"));
                 break;
         }
@@ -98,7 +98,7 @@ public class BRExchange {
                 case BRConstants.CURRENT_UNIT_LITES:
                     currencySymbolString = BRConstants.bitcoinLowercase;
                     break;
-                case BRConstants.CURRENT_UNIT_LITECOINS:
+                case BRConstants.CURRENT_UNIT_BEYONDCOINS:
                     currencySymbolString = BRConstants.bitcoinUppercase;
                     break;
             }

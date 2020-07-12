@@ -182,7 +182,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
         Uri data = intent.getData();
         if (data == null) return;
         String scheme = data.getScheme();
-        if (scheme != null && (scheme.startsWith("litecoin") || scheme.startsWith("bitid"))) {
+        if (scheme != null && (scheme.startsWith("beyondcoin") || scheme.startsWith("bitid"))) {
             String str = intent.getDataString();
             BitcoinUrlHandler.processRequest(this, str);
         }
@@ -268,12 +268,12 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
 
     private void swap() {
         if (!BRAnimator.isClickAllowed()) return;
-        boolean b = !BRSharedPrefs.getPreferredLTC(this);
+        boolean b = !BRSharedPrefs.getPreferredBYND(this);
         setPriceTags(b, true);
-        BRSharedPrefs.putPreferredLTC(this, b);
+        BRSharedPrefs.putPreferredBYND(this, b);
     }
 
-    private void setPriceTags(boolean ltcPreferred, boolean animate) {
+    private void setPriceTags(boolean byndPreferred, boolean animate) {
 
         ConstraintSet set = new ConstraintSet();
         set.clone(toolBarConstraintLayout);
@@ -292,8 +292,8 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
             TransitionManager.beginDelayedTransition(toolBarConstraintLayout, transition);
         }
 
-        primaryPrice.setTextSize(ltcPreferred ? primaryTextSize : secondaryTextSize);
-        secondaryPrice.setTextSize(ltcPreferred ? secondaryTextSize : primaryTextSize);
+        primaryPrice.setTextSize(byndPreferred ? primaryTextSize : secondaryTextSize);
+        secondaryPrice.setTextSize(byndPreferred ? secondaryTextSize : primaryTextSize);
 
         int[] ids = {primaryPrice.getId(), secondaryPrice.getId(), equals.getId()};
         // Clear views constraints
@@ -306,8 +306,8 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
         int dp16 = Utils.getPixelsFromDps(this, 16);
         int dp8 = Utils.getPixelsFromDps(this, 4);
 
-        int leftId = ltcPreferred ? primaryPrice.getId() : secondaryPrice.getId();
-        int rightId = ltcPreferred ? secondaryPrice.getId() : primaryPrice.getId();
+        int leftId = byndPreferred ? primaryPrice.getId() : secondaryPrice.getId();
+        int rightId = byndPreferred ? secondaryPrice.getId() : primaryPrice.getId();
 
         int[] chainViews = {leftId, equals.getId(), rightId};
 
@@ -455,7 +455,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
                 }
                 if (uiIsDone) return;
                 uiIsDone = true;
-                setPriceTags(BRSharedPrefs.getPreferredLTC(BreadActivity.this), false);
+                setPriceTags(BRSharedPrefs.getPreferredBYND(BreadActivity.this), false);
             }
         });
 
@@ -516,7 +516,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
 
                 //amount in BTC units
                 BigDecimal btcAmount = BRExchange.getBitcoinForSatoshis(BreadActivity.this, amount);
-                final String formattedBTCAmount = BRCurrency.getFormattedCurrencyString(BreadActivity.this, "LTC", btcAmount);
+                final String formattedBTCAmount = BRCurrency.getFormattedCurrencyString(BreadActivity.this, "BYND", btcAmount);
 
                 //amount in currency units
                 BigDecimal curAmount = BRExchange.getAmountFromSatoshis(BreadActivity.this, iso, amount);

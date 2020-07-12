@@ -74,8 +74,8 @@ public class WithdrawBchActivity extends BRActivity {
             Timber.e(new NullPointerException("WithdrawBchActivity: onCreate: pubkey is missing!"));
         }
         long satoshis = BRWalletManager.getBCashBalance(pubkey);
-        String iso = BRSharedPrefs.getPreferredLTC(this) ? "LTC" : BRSharedPrefs.getIso(this);
-        BigDecimal amount = iso.equalsIgnoreCase("LTC") ?
+        String iso = BRSharedPrefs.getPreferredBYND(this) ? "BYND" : BRSharedPrefs.getIso(this);
+        BigDecimal amount = iso.equalsIgnoreCase("BYND") ?
                 BRExchange.getBitcoinForSatoshis(this, new BigDecimal(satoshis)) :
                 BRExchange.getAmountFromSatoshis(this, iso, new BigDecimal(satoshis));
 

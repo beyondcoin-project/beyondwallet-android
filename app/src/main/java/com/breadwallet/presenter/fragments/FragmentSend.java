@@ -154,7 +154,7 @@ public class FragmentSend extends Fragment {
         warningText = (BRText) rootView.findViewById(R.id.warning_text);
 
         close = (ImageButton) rootView.findViewById(R.id.close_button);
-        selectedIso = BRSharedPrefs.getPreferredLTC(getContext()) ? "LTC" : BRSharedPrefs.getIso(getContext());
+        selectedIso = BRSharedPrefs.getPreferredBYND(getContext()) ? "BYND" : BRSharedPrefs.getIso(getContext());
 
         amountBuilder = new StringBuilder(0);
         setListeners();
@@ -396,7 +396,7 @@ public class FragmentSend extends Fragment {
             @Override
             public void onClick(View v) {
                 if (selectedIso.equalsIgnoreCase(BRSharedPrefs.getIso(getContext()))) {
-                    selectedIso = "LTC";
+                    selectedIso = "BYND";
                 } else {
                     selectedIso = BRSharedPrefs.getIso(getContext());
                 }

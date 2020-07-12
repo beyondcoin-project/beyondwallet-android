@@ -138,7 +138,7 @@ public class BRActivity extends Activity {
                             else if (BRBitId.isBitId(result))
                                 BRBitId.signBitID(BRActivity.this, result, null);
                             else
-                                Timber.i("onActivityResult: not litecoin address NOR bitID");
+                                Timber.i("onActivityResult: not beyondcoin address NOR bitID");
                         }
                     }, 500);
 

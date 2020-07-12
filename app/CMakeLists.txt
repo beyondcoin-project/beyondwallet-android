@@ -27,39 +27,39 @@ add_library( # Specifies the name of the library.
              SHARED
 
              # Provides a relative path to your source file(s).
-             src/main/jni/loafwallet-core/BRAddress.c
-             src/main/jni/loafwallet-core/BRAddress.h
-             src/main/jni/loafwallet-core/BRArray.h
-             src/main/jni/loafwallet-core/BRBase58.c
-             src/main/jni/loafwallet-core/BRBase58.h
-             src/main/jni/loafwallet-core/BRBIP32Sequence.c
-             src/main/jni/loafwallet-core/BRBIP32Sequence.h
-             src/main/jni/loafwallet-core/BRBIP38Key.c
-             src/main/jni/loafwallet-core/BRBIP38Key.h
-             src/main/jni/loafwallet-core/BRBIP39Mnemonic.c
-             src/main/jni/loafwallet-core/BRBIP39Mnemonic.h
-             src/main/jni/loafwallet-core/BRBIP39WordsEn.h
-             src/main/jni/loafwallet-core/BRBloomFilter.c
-             src/main/jni/loafwallet-core/BRBloomFilter.h
-             src/main/jni/loafwallet-core/BRCrypto.c
-             src/main/jni/loafwallet-core/BRCrypto.h
-             src/main/jni/loafwallet-core/BRInt.h
-             src/main/jni/loafwallet-core/BRKey.c
-             src/main/jni/loafwallet-core/BRKey.h
-             src/main/jni/loafwallet-core/BRMerkleBlock.c
-             src/main/jni/loafwallet-core/BRMerkleBlock.h
-             src/main/jni/loafwallet-core/BRPaymentProtocol.c
-             src/main/jni/loafwallet-core/BRPaymentProtocol.h
-             src/main/jni/loafwallet-core/BRPeer.c
-             src/main/jni/loafwallet-core/BRPeer.h
-             src/main/jni/loafwallet-core/BRPeerManager.c
-             src/main/jni/loafwallet-core/BRPeerManager.h
-             src/main/jni/loafwallet-core/BRSet.c
-             src/main/jni/loafwallet-core/BRSet.h
-             src/main/jni/loafwallet-core/BRTransaction.c
-             src/main/jni/loafwallet-core/BRTransaction.h
-             src/main/jni/loafwallet-core/BRWallet.c
-             src/main/jni/loafwallet-core/BRWallet.h
+             src/main/jni/beyondwallet-core/BRAddress.c
+             src/main/jni/beyondwallet-core/BRAddress.h
+             src/main/jni/beyondwallet-core/BRArray.h
+             src/main/jni/beyondwallet-core/BRBase58.c
+             src/main/jni/beyondwallet-core/BRBase58.h
+             src/main/jni/beyondwallet-core/BRBIP32Sequence.c
+             src/main/jni/beyondwallet-core/BRBIP32Sequence.h
+             src/main/jni/beyondwallet-core/BRBIP38Key.c
+             src/main/jni/beyondwallet-core/BRBIP38Key.h
+             src/main/jni/beyondwallet-core/BRBIP39Mnemonic.c
+             src/main/jni/beyondwallet-core/BRBIP39Mnemonic.h
+             src/main/jni/beyondwallet-core/BRBIP39WordsEn.h
+             src/main/jni/beyondwallet-core/BRBloomFilter.c
+             src/main/jni/beyondwallet-core/BRBloomFilter.h
+             src/main/jni/beyondwallet-core/BRCrypto.c
+             src/main/jni/beyondwallet-core/BRCrypto.h
+             src/main/jni/beyondwallet-core/BRInt.h
+             src/main/jni/beyondwallet-core/BRKey.c
+             src/main/jni/beyondwallet-core/BRKey.h
+             src/main/jni/beyondwallet-core/BRMerkleBlock.c
+             src/main/jni/beyondwallet-core/BRMerkleBlock.h
+             src/main/jni/beyondwallet-core/BRPaymentProtocol.c
+             src/main/jni/beyondwallet-core/BRPaymentProtocol.h
+             src/main/jni/beyondwallet-core/BRPeer.c
+             src/main/jni/beyondwallet-core/BRPeer.h
+             src/main/jni/beyondwallet-core/BRPeerManager.c
+             src/main/jni/beyondwallet-core/BRPeerManager.h
+             src/main/jni/beyondwallet-core/BRSet.c
+             src/main/jni/beyondwallet-core/BRSet.h
+             src/main/jni/beyondwallet-core/BRTransaction.c
+             src/main/jni/beyondwallet-core/BRTransaction.h
+             src/main/jni/beyondwallet-core/BRWallet.c
+             src/main/jni/beyondwallet-core/BRWallet.h
 
              src/main/jni/transition/core.c
              src/main/jni/transition/core.h
@@ -75,7 +75,7 @@ add_library( # Specifies the name of the library.
              src/main/jni/transition/wallet.h)
 
 
-include_directories(src/main/jni/loafwallet-core/)
+include_directories(src/main/jni/beyondwallet-core/)
 include_directories(src/main/secp/secp256k1/include/)
 include_directories(src/main/secp/secp256k1/src/)
 include_directories(src/main/secp/secp256k1/)
