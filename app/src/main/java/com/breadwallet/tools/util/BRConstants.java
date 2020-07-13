@@ -176,8 +176,8 @@ public class BRConstants {
     public static final String _20191105_AL = "APP_LAUNCHED";
     public static final String _20191105_VSC = "VISIT_SEND_CONTROLLER";
     public static final String _20202116_VRC = "VISIT_RECEIVE_CONTROLLER";
-    public static final String _20191105_DSL = "DID_SEND_LTC";
-    public static final String _20191105_DULP = "DID_UPDATE_LTC_PRICE";
+    public static final String _20191105_DSL = "DID_SEND_BYND";
+    public static final String _20191105_DULP = "DID_UPDATE_BYND_PRICE";
     public static final String _20191105_DTBT = "DID_TAP_BUY_TAB";
     public static final String _20200111_DEDG = "DID_ENTER_DISPATCH_GROUP";
     public static final String _20200111_DLDG = "DID_LEAVE_DISPATCH_GROUP";

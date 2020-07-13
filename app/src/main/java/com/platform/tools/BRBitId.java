@@ -69,7 +69,7 @@ import timber.log.Timber;
  * THE SOFTWARE.
  */
 public class BRBitId {
-    public static final String BITCOIN_SIGNED_MESSAGE_HEADER = "Litecoin Signed Message:\n";
+    public static final String BITCOIN_SIGNED_MESSAGE_HEADER = "Beyondcoin Signed Message:\n";
 
     private static String _bitUri;
     private static String _bitIdUrl;

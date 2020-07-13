@@ -42,7 +42,7 @@ public class BRExchange {
 
     public static BigDecimal getMaxAmount(Context context, String iso) {
         final long MAX_BTC = 84000000;
-        if (iso.equalsIgnoreCase("LTC"))
+        if (iso.equalsIgnoreCase("BYND"))
             return getBitcoinForSatoshis(context, new BigDecimal(MAX_BTC * 100000000));
         CurrencyEntity ent = CurrencyDataSource.getInstance(context).getCurrencyByIso(iso);
         if (ent == null) return new BigDecimal(Integer.MAX_VALUE);
@@ -109,7 +109,7 @@ public class BRExchange {
     //get an iso amount from  satoshis
     public static BigDecimal getAmountFromSatoshis(Context app, String iso, BigDecimal amount) {
         BigDecimal result;
-        if (iso.equalsIgnoreCase("LTC")) {
+        if (iso.equalsIgnoreCase("BYND")) {
             result = getBitcoinForSatoshis(app, amount);
         } else {
             //multiply by 100 because core function localAmount accepts the smallest amount e.g. cents
@@ -126,7 +126,7 @@ public class BRExchange {
     //get satoshis from an iso amount
     public static BigDecimal getSatoshisFromAmount(Context app, String iso, BigDecimal amount) {
         BigDecimal result;
-        if (iso.equalsIgnoreCase("LTC")) {
+        if (iso.equalsIgnoreCase("BYND")) {
             result = BRExchange.getSatoshisForBitcoin(app, amount);
         } else {
             //multiply by 100 because core function localAmount accepts the smallest amount e.g. cents
