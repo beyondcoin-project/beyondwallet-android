@@ -140,8 +140,8 @@
   <string name="ConfirmPaperPhrase.label">为确保一切均被正确地书写，请在您的纸键输入以下文字。</string>
   <!-- Word label eg. Word #1, Word #2 -->
   <string name="ConfirmPaperPhrase.word">单词#%1$s</string>
-  <!-- Litecoin denomination picker label -->
-  <string name="DefaultCurrency.litecoinLabel">莱特币显示单位</string>
+  <!-- Beyondcoin denomination picker label -->
+  <string name="DefaultCurrency.beyondcoinLabel">莱特币显示单位</string>
   <!-- Exchange rate label -->
   <string name="DefaultCurrency.rateLabel">汇率</string>
   <!-- Email unavailable alert title -->
@@ -243,7 +243,7 @@
   <!-- Menu button title -->
   <string name="MenuButton.settings">设置</string>
   <!-- Menu button title -->
-  <string name="MenuButton.support">支持:       litewallet@litecoinfoundation.net</string>
+  <string name="MenuButton.support">支持:       beyondwallet@beyondcoin.io</string>
   <!-- button label -->
   <string name="MenuViewController.createButton">创建新的钱包</string>
   <!-- Menu modal title -->

@@ -5,7 +5,7 @@
   <!-- About screen blog label -->
   <string name="About.blog">Блог</string>
   <!-- About screen footer -->
-  <string name="About.footer">Сделано командой Litewallet Фонда Litecoin\n%1$s</string>
+  <string name="About.footer">Сделано командой Beyondwallet Фонда Beyondcoin Project\n%1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">Политика конфиденциальности</string>
   <!-- About screen reddit label -->
@@ -140,8 +140,8 @@
   <string name="ConfirmPaperPhrase.label">Чтобы убедиться, что всё записано корректно, пожалуйста, введите следующие слова с вашего бумажного ключа.</string>
   <!-- Word label eg. Word #1, Word #2 -->
   <string name="ConfirmPaperPhrase.word">Слово #%1$s</string>
-  <!-- Litecoin denomination picker label -->
-  <string name="DefaultCurrency.litecoinLabel">Единица отображения биткойна</string>
+  <!-- Beyondcoin denomination picker label -->
+  <string name="DefaultCurrency.beyondcoinLabel">Единица отображения биткойна</string>
   <!-- Exchange rate label -->
   <string name="DefaultCurrency.rateLabel">Обменный курс</string>
   <!-- Email unavailable alert title -->
@@ -235,7 +235,7 @@
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">Управление кошельком</string>
   <!-- Buy bitcoin title -->
-  <string name="MenuButton.buy">Купить Litecoin</string>
+  <string name="MenuButton.buy">Купить Beyondcoin</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">Заблокировать кошелек</string>
   <!-- Menu button title -->
@@ -243,7 +243,7 @@
   <!-- Menu button title -->
   <string name="MenuButton.settings">Настройки</string>
   <!-- Menu button title -->
-  <string name="MenuButton.support">Поддержка:       litewallet@litecoinfoundation.net</string>
+  <string name="MenuButton.support">Поддержка:       beyondwallet@beyondcoin.io</string>
   <!-- button label -->
   <string name="MenuViewController.createButton">Создать новый кошелек</string>
   <!-- Menu modal title -->
@@ -738,7 +738,7 @@
   <string name="WritePaperPhrase.previous">Назад</string>
   <!-- 1 of 3 -->
   <string name="WritePaperPhrase.step">%1$d из %2$d</string>
-    <string name="Donate.title">Нажмите, чтобы пожертвовать в фонд Litecoin (%1$s)</string>
+    <string name="Donate.title">Нажмите, чтобы пожертвовать в фонд Beyondcoin (%1$s)</string>
   <string name="Donate.title.confirmation">Подтвердите Пожертвование</string>
   <string name="Confirmation.processingAndDonationTime">Время обработки: обработка этих транзакций займет  %1$s минут.</string>
   <string name="Confirmation.donateLabel">Сумма пожертвования:</string>
