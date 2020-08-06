@@ -60,6 +60,9 @@ add_library( # Specifies the name of the library.
              src/main/jni/beyondwallet-core/BRTransaction.h
              src/main/jni/beyondwallet-core/BRWallet.c
              src/main/jni/beyondwallet-core/BRWallet.h
+            src/main/jni/beyondwallet-core/BRChainParams.h
+            src/main/jni/beyondwallet-core/BRBech32.c
+            src/main/jni/beyondwallet-core/BRBech32.h
 
              src/main/jni/transition/core.c
              src/main/jni/transition/core.h
