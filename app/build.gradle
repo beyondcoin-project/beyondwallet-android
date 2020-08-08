@@ -29,8 +29,8 @@ android {
         applicationId = 'com.beyondwallet'
         minSdkVersion 23
         targetSdkVersion 29
-        versionCode 613
-        versionName "v1.19.4"
+        versionCode 615
+        versionName "v1.19.5"
         multiDexEnabled true
 
         // Similar to other properties in the defaultConfig block,
