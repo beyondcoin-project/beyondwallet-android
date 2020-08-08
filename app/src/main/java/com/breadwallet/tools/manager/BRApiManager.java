@@ -157,7 +157,7 @@ public class BRApiManager {
 
 
     public static JSONArray fetchRates(Activity activity) {
-        String jsonString = urlGET(activity, "https://api.loshan.co.uk/api/v1/rates");
+        String jsonString = urlGET(activity, "https://rates.beyondcoin.io/api/v1/rates");
         JSONArray jsonArray = null;
         if (jsonString == null) return null;
         try {
@@ -169,7 +169,7 @@ public class BRApiManager {
     }
 
     public static JSONArray backupFetchRates(Activity activity) {
-        String jsonString = urlGET(activity, "https://api.loafwallet.org/api/v1/rates");
+        String jsonString = urlGET(activity, "https://api.beyondwallet.org/api/v1/rates");
 
         JSONArray jsonArray = null;
         if (jsonString == null) return null;
@@ -183,7 +183,7 @@ public class BRApiManager {
     }
 
     public static void updateFeePerKb(Context app) {
-        String jsonString = urlGET(app, "https://api.loafwallet.org/fee-per-kb");
+        String jsonString = urlGET(app, "https://api.beyondwallet.org/fee-per-kb");
         if (jsonString == null || jsonString.isEmpty()) {
             Timber.i("updateFeePerKb: failed to update fee, response string: %s", jsonString);
             return;

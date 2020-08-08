@@ -80,7 +80,7 @@ public class BRConstants {
     public static final String ECONOMY_FEE_KB_PREFS = "EconomyFeeKb";
     public static final String LITTLE_CIRCLE = "\u2022";
 
-    public static String SUPPORT_EMAIL = "support@loafwallet.com";
+    public static String SUPPORT_EMAIL = "beyondwallet@beyondcoin.io";
 
     public static final int ONE_BITCOIN = 100000000;
     public static final int HUNDRED_BITS = 10000000;
@@ -132,8 +132,8 @@ public class BRConstants {
      */
     public static final Pair[] DONATION_ADDRESSES = new Pair[]
             {
-                    Pair.create("Beyondwallet Hardware Fundraiser", "MJ4W7NZya4SzE7R6xpEVdamGCimaQYPiWu"),
-                    Pair.create("Beyondcoin Foundation", "MVZj7gBRwcVpa9AAWdJm8A3HqTst112eJe")
+                    Pair.create("BeyondWallet Development", "BkVG6q7ViAjvA2C39sWS5mkoW4mWq5gvyV"),
+                    Pair.create("Beyondcoin Project", "BWaqKuDLchhsQcYqUSbizuHDXxWygz4nns")
             };
     public static final long DONATION_AMOUNT = 1_800_000;
 
