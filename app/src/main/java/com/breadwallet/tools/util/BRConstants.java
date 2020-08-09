@@ -163,9 +163,9 @@ public class BRConstants {
     public static final String loopBug = "android-loop-bug";
 
     public static final String TWITTER_LINK = "https://twitter.com/beyondcoin_bynd";
-    public static final String REDDIT_LINK = "https://www.reddit.com/r/beyondcoin";
-    public static final String WEB_LINK = "https://beyondwallet.io";
-    public static final String TOS_LINK = "https://beyondwallet.io/tos";
+    public static final String REDDIT_LINK = "https://reddit.com/r/beyondcoin";
+    public static final String WEB_LINK = "https://beyondwallet.org";
+    public static final String TOS_LINK = "https://beyondwallet.org/privacy";
 
     public static final String BLOCK_EXPLORER_BASE_URL = BuildConfig.BEYONDCOIN_TESTNET ? "https://testnet.beyondcoinexplorer.com/#/transaction/" : "https://beyondcoinexplorer.com/#/transaction/";
 
